@@ -39,15 +39,16 @@ public class ArrayStack implements StackIntADT
  public void push(int element)
  {
    //if(stackPointer == myStack.length)
-   /*
+
    if(isFull()==true)
    {
        System.out.println("isfull");
    }
-   */
-   stackPointer++;
-   //else
-   myStack[stackPointer]=element;
+   else
+   {
+     stackPointer++;
+     myStack[stackPointer]=element;
+   }
  }
 
  //take an element off the stack
@@ -82,9 +83,8 @@ public class ArrayStack implements StackIntADT
  //check if the stack is full
  public boolean isFull()
  {
-   //if(stackPointer==size-1) return true;
-   //else
-   return false;
+   if(stackPointer==size-1) return true;
+   else return false;
 
  }
  public int size()
