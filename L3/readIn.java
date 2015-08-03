@@ -9,6 +9,7 @@ public class readIn
     while (input.contains("done:") != true)
     {
       input = b.nextLine();
+      if(input.split())
       switch (input)
       {
 
